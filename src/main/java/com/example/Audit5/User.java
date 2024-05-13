@@ -3,9 +3,11 @@ package com.example.Audit5;
 import jakarta.persistence.*;
 import lombok.*;
 
-@Data
+@Setter
+@Getter
 @Entity
 @Table(name = "users")
+@ToString
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
